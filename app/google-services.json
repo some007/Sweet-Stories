@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "662751464214",
+    "project_id": "me-sweet-stories",
+    "storage_bucket": "me-sweet-stories.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662751464214:android:9f5285ae2f9b6480cc1e37",
+        "android_client_info": {
+          "package_name": "me.akshay.stories"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "662751464214-rai1v1ke5fh3c3d2sttbo91t9lmilp95.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "me.akshay.stories",
+            "certificate_hash": "8687e127fb948115ba237286135f8e94517006b4"
+          }
+        },
+        {
+          "client_id": "662751464214-v1k723e2d8qrd1k7kf9uthjqbsqgvfbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC38J3zokWCW3fEso__Tx-9RpwAsWajtMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "662751464214-v1k723e2d8qrd1k7kf9uthjqbsqgvfbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

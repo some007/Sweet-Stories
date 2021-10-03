@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sweet Stories</string>
+    <string name="app_slogan">Read or listen to sweet stories</string>
+    <string name="google_btn">Sign in with google</string>
+    <string name="app_logo">App Logo</string>
+    <string name="login_desc">Login with google account to enjoy all features</string>
+    <string name="welcome">Hi,</string>
+    <string name="slider_description">We Got\nSome Stories To Tell.</string>
+    <string name="cover_transition">BookCover</string>
+
+    <string name="google_web_client">662751464214-v1k723e2d8qrd1k7kf9uthjqbsqgvfbg.apps.googleusercontent.com</string>
+</resources>

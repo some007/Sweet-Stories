@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="me.akshay.stories.ui.detail.DetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardCodedText"
+        tools:context=".ui.detail.DetailActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/top_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@drawable/top_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/app_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cover_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="20dp"
+                android:transitionName=""
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginStart="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_back">
+
+                <ImageView
+                    android:id="@+id/cover_iv"
+                    android:layout_width="120dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/app_logo"
+                    android:transitionName="@string/cover_transition"
+                    android:src="@mipmap/ic_launcher_foreground"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/slider_description"
+                android:textColor="@color/white"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cover_card"
+                app:layout_constraintTop_toTopOf="@+id/cover_card"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center_vertical"
+                app:layout_constraintTop_toBottomOf="@+id/title_tv"
+                app:layout_constraintStart_toEndOf="@+id/cover_card"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <RatingBar
+                    android:id="@+id/rate_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:rating="4.5"
+                    android:progressTint="@color/semi_white"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:src="@drawable/ic_star_rate"/>
+
+                <TextView
+                    android:id="@+id/rating_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textColor="@color/semi_white"
+                    android:layout_marginStart="2dp"/>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Story Script"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="28dp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top_layout" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/play_btn">
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:fontFamily="sans-serif"
+                android:textSize="16sp"/>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/play_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="@drawable/play_btn"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Unavailable"
+            android:layout_margin="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:focusable="true"
+            android:clickable="true"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
