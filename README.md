@@ -1,2 +1,2 @@
 # Sweet-Stories
-this is the first project developed by my friend
+you can read the stories.
